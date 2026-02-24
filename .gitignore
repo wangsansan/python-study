@@ -1,2 +1,4 @@
 .idea
 python-study.iml
+
+langchain/.env
