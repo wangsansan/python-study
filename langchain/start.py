@@ -8,6 +8,7 @@ import dotenv
 dotenv.load_dotenv()
 print(langchain.__version__)
 
+# 这些key配置在.env文件中
 print(os.getenv("ALI_BASE_URL"))
 print(os.getenv("ALI_API_KEY"))
 os.environ["OPEN_BASE_URL"] = os.getenv("ALI_BASE_URL")
@@ -21,7 +22,7 @@ chat_model = ChatOpenAI(
 )
 
 # 调用模型
-response = chat_model.invoke("宁雅姝喜欢王春生，那么宁雅姝喜欢谁呢？")
+response = chat_model.invoke("京东算是互联网公司么？")
 
 #执行时间较长
 print(response.content)
